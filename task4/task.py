@@ -8,7 +8,7 @@ def compute_entropy(probabilities):
             entropy -= prob * log2(prob)
     return entropy
 
-def analyze_data(input_matrix):
+def main(input_matrix):
     data_matrix = np.array(input_matrix)
     total_purchases = data_matrix.sum()
     prob_matrix = data_matrix / total_purchases
@@ -41,4 +41,4 @@ test_data = [[20, 15, 10, 5],
              [15, 15, 30, 25]]
 
 if __name__ == "__main__":
-    analyze_data(test_data)
+    main(test_data)
